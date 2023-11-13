@@ -17,30 +17,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=PT+Serif&display=swap" rel="stylesheet">
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementsByClassName("container1");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("");
+  } else {
+    header.classList.remove("sticky");
+    console.log('not scrolling....')
+  }
+}
+</script>
 
 </head>
 
 <body>
-  <div class="mx-auto">
-    <header style="background-image: url(images/3.png);">
-      <nav class="flex align-center">
-        <div class="font-bold text-orange"
-          style="margin-right: 150px;margin-left: 50px;font-family: 'PT Serif', serif;font-weight: 900;font-size: 25px;">
-          SavoryBites</div>
-        <ul class="navbar align-center text-font" style="font-size: 17px;">
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Menus</li>
-          <li>Contact</li>
-          <li style="margin-right: 100px;">Services</li>
-          <li><img src="http://www.bigblounge.com/public/front/interior/images/order-button.png" alt="Zomato"></li>
-          <li>|</li>
-          <li><a href="tel:7347010474"><img class="call-now" style="width: 20px;"
-                src="https://bigblounge.com\/public/front/interior/images/call-now.png"> <span>73470-10474</span> </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  
     <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
@@ -153,6 +154,27 @@
             font-family: 'Dancing Script', cursive;">Taste it!</h5>
           <p style="font-family: 'PT Serif', serif;font-weight: 900;font-size: 55px;">BEST SELLER'S</p>
         </div>
+          <!-- Navbar -->
+        <div class="mx-auto">
+          <header style="background-image: url(images/3.png);">
+            <nav class="flex align-center navbarhaiyeh sticky">
+              <div class="font-bold text-orange"
+                style="margin-right: 150px;margin-left: 50px;font-family: 'PT Serif', serif;font-weight: 900;font-size: 25px;">
+                SavoryBites</div>
+              <ul class="navbar align-center text-font" style="font-size: 17px;">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Menus</li>
+                <li>Contact</li>
+                <li style="margin-right: 100px;">Services</li>
+                <li><img src="http://www.bigblounge.com/public/front/interior/images/order-button.png" alt="Zomato"></li>
+                <li>|</li>
+                <li><a href="tel:7347010474"><img class="call-now" style="width: 20px;"
+                      src="https://bigblounge.com\/public/front/interior/images/call-now.png"> <span>73470-10474</span> </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
         <div class="flex justify-center" style="margin-top: 30px;text-align: center;">
           <!-- <img src="https://www.bigblounge.com\/uploads/ourmenu/categ/2022/burgger.png"> -->
           <!-- <img src="https://www.bigblounge.com\/uploads/ourmenu/categ/2022/chines-starter.png"> -->
