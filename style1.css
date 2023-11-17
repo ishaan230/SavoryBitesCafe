@@ -148,3 +148,67 @@ input,
     font-weight: 600;
 
 }
+
+
+.inner-baner-section {
+    background-image: url('https://www.bigblounge.com//public/front/interior/images/inner-banner.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 125px 0;
+}
+
+/* Style for the banner text */
+.bner-text {
+    text-align: center;
+    color: #fff;
+}
+
+.our-story{
+    text-align: center;
+    margin: 100px 0px;
+    font-size:20px
+
+}
+
+.sm-font{
+    font-weight: bolder;
+}
+/* Update styles for the image slider section */
+.image-slider-section {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('https://www.bigblounge.com//public/front/interior/images/our-section-bg.jpg');
+    background-size: 100% auto; /* Set the background size to cover the full width */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Update styles for the image slider container */
+.image-slider {
+    display: flex;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+/* Update styles for the images in the slider */
+.image-slider img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.our-values{
+    padding: 150px 0px;
+}
+
+.bt-footer{
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0;
+}
+
